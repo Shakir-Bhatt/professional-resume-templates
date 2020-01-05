@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resume Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/font-awesome.css"> -->
+  <script src="assets/font-awesome.js"></script>
+</head>
+<body>
+    <style type="text/css">
+        body{
+            background: #f5f2f2;
+            font-family: arial;
+        }
+        .container{
+            background: #fff;
+            padding: 30px;
+        }
+        .profile-pic{
+            border-radius: 50%;
+            height: 169px;
+        }
+        .rt-head{
+            /*white-space: pre-line;*/
+            background: #20b5a7;
+            height: 163px;
+            padding: 10px;
+            color: #fff;
+        }
+        .rt-head .job-title{
+            border-bottom: 2px solid #fff;
+            padding-bottom: 3px;
+            /*position: absolute;*/
+
+        }
+        .contact{
+            margin-top: 20px;
+        }
+        .contact ul{
+            list-style: none;    
+            margin-left: -20px;
+        }
+        .contact ul > li{
+            margin-bottom: 20px;
+        }
+        i{
+            color: #20b5a7;
+            margin-right: 15px;
+        }
+        .fs-0{
+            font-size: 10px !important;
+        }
+        .fs-1{
+            font-size: 21px !important;
+        }
+        .fs-2{
+            font-size: 25px !important;
+        }
+        .fs-3{
+            font-size: 32px !important;
+        }
+        .fs-4{
+            font-size: 7em !important;
+        }
+        .fs-5{
+            font-size: 12em !important;
+        }
+        .fs-6{
+            font-size: 20em !important;
+        }
+
+        /* -- main body -- */
+
+        .main-body{
+            margin-top: 21px;
+            border-left: 2px solid #20b5a7;
+            padding-left: 10px;
+        }
+        .title{
+            color: #20b5a7;
+            font-size: 20px;
+            border-bottom: 2px solid #20b5a7;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .main-body .sub-title{
+            color: #20b5a7;
+            font-size: 20px;
+            padding-top: 5px;
+            font-weight: bold;
+        }
+        .main-body .company{
+            font-size: 20px;
+        }
+        .section-main{
+            padding-right: 35px;
+        }
+        .section-detial{
+
+        }
+        .section-detial ul {
+            list-style: none;
+            margin-left: -25px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .section-detial ul > li{
+            padding-bottom: 3px;
+        }
+        .date{
+            font-style: italic;
+            color: #20b5a7;
+        }
+        .float-r{
+            float: right;
+        }
+        .section-orginization > p{
+            margin-left: 15px; 
+        }
+        .skills > label{
+            background: #20b5a7;
+            color: #fff;
+            padding: 6px 10px 6px 10px;
+            border-radius: 4px;
+        }
+
+        @media print {
+            body{
+                background: #f5f2f2;
+                font-family: arial;
+            }
+            .container{
+                background: #fff;
+                padding: 30px;
+            }
+            .profile-pic{
+                border-radius: 50%;
+                height: 169px;
+            }
+            .rt-head{
+                /*white-space: pre-line;*/
+                background: #20b5a7;
+                height: 163px;
+                padding: 10px;
+                color: #fff;
+            }
+            .rt-head .job-title{
+                border-bottom: 2px solid #fff;
+                padding-bottom: 3px;
+                /*position: absolute;*/
+
+            }
+            .contact{
+                margin-top: 20px;
+            }
+            .contact ul{
+                list-style: none;    
+                margin-left: -20px;
+            }
+            .contact ul > li{
+                margin-bottom: 20px;
+            }
+            i{
+                color: #20b5a7;
+                margin-right: 15px;
+            }
+            .fs-0{
+                font-size: 10px !important;
+            }
+            .fs-1{
+                font-size: 21px !important;
+            }
+            .fs-2{
+                font-size: 25px !important;
+            }
+            .fs-3{
+                font-size: 32px !important;
+            }
+            .fs-4{
+                font-size: 7em !important;
+            }
+            .fs-5{
+                font-size: 12em !important;
+            }
+            .fs-6{
+                font-size: 20em !important;
+            }
+
+            /* -- main body -- */
+
+            .main-body{
+                margin-top: 21px;
+                border-left: 2px solid #20b5a7;
+                padding-left: 10px;
+            }
+            .title{
+                color: #20b5a7;
+                font-size: 20px;
+                border-bottom: 2px solid #20b5a7;
+                padding-bottom: 3px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .main-body .sub-title{
+                color: #20b5a7;
+                font-size: 20px;
+                padding-top: 5px;
+                font-weight: bold;
+            }
+            .main-body .company{
+                font-size: 20px;
+            }
+            .section-main{
+                padding-right: 35px;
+            }
+            .section-detial{
+
+            }
+            .section-detial ul {
+                list-style: none;
+                margin-left: -25px;
+                margin-top: 10px;
+                font-size: 16px;
+            }
+            .section-detial ul > li{
+                padding-bottom: 3px;
+            }
+            .date{
+                font-style: italic;
+                color: #20b5a7;
+            }
+            .float-r{
+                float: right;
+            }
+            .section-orginization > p{
+                margin-left: 15px; 
+            }
+            .skills > label{
+                background: #20b5a7;
+                color: #fff;
+                padding: 6px 10px 6px 10px;
+                border-radius: 4px;
+            }
+        }
+
+    </style>
+  
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-3">
+                <img src="profile-pic.jpeg" class="profile-pic">
+                <div class="row contact">
+                    <ul>
+                        <li><i class="fa fa-envelope fs-1"></i>umer.khan@gmail.com</li>
+                        <li><i class="fa fa-mobile fs-3"></i>+91 7889684429</li>
+                        <li><i class="fa fa-map-marker fs-2"></i>Hongasundra Bangalore</li>
+                        <li><i class="fa fa-linkedin-square fs-1"></i>umer.khan@gmail.com</li>
+                        <li><i class="fa fa-envelope fs-1"></i>umer.khan@gmail.com</li>
+                        <li><i class="fa fa-skype fs-2"></i>umer.khan@gmail.com</li>
+
+                    </ul>
+                </div>
+                <div class="row skills section-main">
+                    <p class="title">Skills</p>
+                    <label>SEO</label>
+                    <label>Public Speaking</label>
+                    <label>Team Work</label>
+                    <label>Reading</label>
+                </div>
+                <div class="row languages section-main">
+                    <p class="title">Languages</p>
+                    <div class="language-detail">
+                        <h4>English</h4>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle-o fs-2"></i></span>
+                    </div>
+                    <div class="language-detail">
+                        <h4>Urdu</h4>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle fs-2"></i></span>
+                        <span><i class="fa fa-circle-o fs-2"></i></span>
+                        <span><i class="fa fa-circle-o fs-2"></i></span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row rt-head">
+                    <h3 class="name">Umer Waseem Khan</h3>
+                    <p class="job-title">Business Development Manager</p>
+                    <p>
+                        Professional business profile with more than four years of experience in the business developemnt process. Involved in product testing, managment and development of new business oppuntunites.
+                    </p>
+                </div>
+                <div class="row main-body">
+                    <div class="section-main">
+                        <p class="title">Work Experience</p>
+                        <div class="section-job-detail">
+                            <p class="sub-title">Business Development Manager</p>
+                            <p class="company">AirState Solutions</p>
+                            <div class="section">
+                                <span class="date">12/12/2018 - 12/12/2019</span> 
+                                <span class="date float-r">New York, USA</span> 
+                            </div>
+                            <div class="section-detial">
+                                <ul>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                </ul>
+                            </div>
+                        </div> <!-- section-job-detail -->
+
+
+                        <div class="section-job-detail">
+                            <p class="sub-title">Business Development Manager</p>
+                            <p class="company">AirState Solutions</p>
+                            <div class="section">
+                                <span class="date">12/12/2018 - 12/12/2019</span> 
+                                <span class="date float-r">New York, USA</span> 
+                            </div>
+                            <div class="section-detial">
+                                <ul>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
+                                </ul>
+                            </div>
+                        </div> <!-- section-job-detail -->
+
+                        <p class="title">Orginization</p>
+                        <div class="section-orginization">
+                            <p>Amarican Management Association(2015 - Present)</p>
+                            <p>Association of Private Enterprise  Association(2015 - Present)</p>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
