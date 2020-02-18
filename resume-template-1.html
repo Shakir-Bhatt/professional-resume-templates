@@ -15,18 +15,19 @@
     <style type="text/css">
         body{
             background: #f5f2f2;
-            font-family: arial;
+            font-family: serif;
         }
         .container{
             background: #fff;
             padding: 30px;
         }
         .profile-pic{
+            border:1px solid #f5f2f2;
             border-radius: 50%;
-            height: 169px;
+            height: 160px;
+            width: 160px;
         }
         .rt-head{
-            /*white-space: pre-line;*/
             background: #20b5a7;
             height: 163px;
             padding: 10px;
@@ -35,8 +36,6 @@
         .rt-head .job-title{
             border-bottom: 2px solid #fff;
             padding-bottom: 3px;
-            /*position: absolute;*/
-
         }
         .contact{
             margin-top: 20px;
@@ -77,7 +76,8 @@
         /* -- main body -- */
 
         .main-body{
-            margin-top: 21px;
+
+            /*margin-top: 21px;*/
             border-left: 2px solid #20b5a7;
             padding-left: 10px;
         }
@@ -99,6 +99,7 @@
             font-size: 20px;
         }
         .section-main{
+            margin-top: 20px;
             padding-right: 35px;
         }
         .section-detial{
@@ -130,148 +131,178 @@
             border-radius: 4px;
         }
 
+        @page {
+          size: A4;
+          margin: 0;
+        }
         @media print {
-            body{
-                background: #f5f2f2;
-                font-family: arial;
-            }
-            .container{
-                background: #fff;
-                padding: 30px;
-            }
-            .profile-pic{
-                border-radius: 50%;
-                height: 169px;
-            }
-            .rt-head{
-                /*white-space: pre-line;*/
-                background: #20b5a7;
-                height: 163px;
-                padding: 10px;
-                color: #fff;
-            }
-            .rt-head .job-title{
-                border-bottom: 2px solid #fff;
-                padding-bottom: 3px;
-                /*position: absolute;*/
+            
+        body{
+            font-family: serif;
+        }
+        #left{
+            width: 30% !important;
+        }
+        #right{
+            width: 70% !important;
+            margin-top: -1000px !important;
+            margin-left: 220px !important;
+        }
 
-            }
-            .contact{
-                margin-top: 20px;
-            }
-            .contact ul{
-                list-style: none;    
-                margin-left: -20px;
-            }
-            .contact ul > li{
-                margin-bottom: 20px;
-            }
-            i{
-                color: #20b5a7;
-                margin-right: 15px;
-            }
-            .fs-0{
-                font-size: 10px !important;
-            }
-            .fs-1{
-                font-size: 21px !important;
-            }
-            .fs-2{
-                font-size: 25px !important;
-            }
-            .fs-3{
-                font-size: 32px !important;
-            }
-            .fs-4{
-                font-size: 7em !important;
-            }
-            .fs-5{
-                font-size: 12em !important;
-            }
-            .fs-6{
-                font-size: 20em !important;
-            }
+        .container{
+            background: #fff !important;
+            padding: 30 10px !important;
+            width: 100% !important;
+            margin-top: 30px !important;
+            padding-top: 42px !important;
+        }
+        .profile-pic{ 
+            border: 1px solid #f5f2f2 !important;
+            height: 160px !important;
+            width: 160px !important;
+            margin-bottom: 20px !important;
+            margin-top: 40px !important;
+            border-radius: 50% !important;
+        }
+        .rt-head{
+            color: #fff !important;
+            background: #20b5a7 !important;
+            height: 163px !important;
+            padding: 10px !important;
+        }
+        .rt-head .name{
+            color: #fff !important;
+        }
+        .rt-head p{
+            color: #fff !important;
+        }
+        .rt-head .job-title{
+            color: #fff !important;
+            border-bottom: 2px solid #fff !important;
+            padding-bottom: 3px !important;
+        }
+        .contact{
+            margin-top: 20px !important;
+        }
+        .contact ul{
+            list-style: none !important;    
+            margin-left: -20px !important;
+        }
+        .contact ul > li{
+            margin-bottom: 20px !important;
+        }
+        .fa:before{
+            color: #20b5a7 !important;
+        }
+        .fs-0{
+            font-size: 10px !important;
+        }
+        .fs-1{
+            font-size: 21px !important;
+        }
+        .fs-2{
+            font-size: 25px !important;
+        }
+        .fs-3{
+            font-size: 32px !important;
+        }
+        .fs-4{
+            font-size: 7em !important;
+        }
+        .fs-5{
+            font-size: 12em !important;
+        }
+        .fs-6{
+            font-size: 20em !important;
+        }
 
-            /* -- main body -- */
+        /* -- main body -- */
 
-            .main-body{
-                margin-top: 21px;
-                border-left: 2px solid #20b5a7;
-                padding-left: 10px;
-            }
-            .title{
-                color: #20b5a7;
-                font-size: 20px;
-                border-bottom: 2px solid #20b5a7;
-                padding-bottom: 3px;
-                text-transform: uppercase;
-                font-weight: bold;
-            }
-            .main-body .sub-title{
-                color: #20b5a7;
-                font-size: 20px;
-                padding-top: 5px;
-                font-weight: bold;
-            }
-            .main-body .company{
-                font-size: 20px;
-            }
-            .section-main{
-                padding-right: 35px;
-            }
-            .section-detial{
+        .main-body{
+            /*margin-top: 21px !important;*/
+            border-left: 2px solid #20b5a7 !important;
+            padding-left: 10px !important;
+        }
+        .title{
+            color: #20b5a7 !important;
+            font-size: 20px !important;
+            border-bottom: 2px solid #20b5a7 !important;
+            padding-bottom: 3px !important;
+            text-transform: uppercase !important;
+            font-weight: bold !important;
+        }
+        .main-body .sub-title{
+            color: #20b5a7 !important;
+            font-size: 20px !important;
+            padding-top: 5px !important;
+            font-weight: bold !important;
+        }
+        .main-body .company{
+            font-size: 20px !important;
+        }
+        .section-main{
+            margin-top: 20px !important;
+            padding-right: 10px !important;
+        }
+        /*.section-detial{
+            margin-right: -20px !important;
+        }*/
+        .section-detial ul {
+            list-style: none !important;
+            margin-left: -25px !important;
+            margin-top: 10px !important;
+            font-size: 16px !important;
+            margin-right: -15px !important;
 
-            }
-            .section-detial ul {
-                list-style: none;
-                margin-left: -25px;
-                margin-top: 10px;
-                font-size: 16px;
-            }
-            .section-detial ul > li{
-                padding-bottom: 3px;
-            }
-            .date{
-                font-style: italic;
-                color: #20b5a7;
-            }
-            .float-r{
-                float: right;
-            }
-            .section-orginization > p{
-                margin-left: 15px; 
-            }
-            .skills > label{
-                background: #20b5a7;
-                color: #fff;
-                padding: 6px 10px 6px 10px;
-                border-radius: 4px;
-            }
+        }
+        .section-detial ul > li{
+            padding-bottom: 3px !important;
+        }
+        .date{
+            font-style: italic !important;
+            color: #20b5a7 !important;
+        }
+        .float-r{
+            float: right !important;
+        }
+        .section-orginization > p{
+            margin-left: 15px !important; 
+        }
+        .skills > label{
+            background: #20b5a7 !important;
+            color: #fff !important;
+            padding: 6px 10px 6px 10px !important;
+            border-radius: 4px !important;
+        }
+        .page-break{
+            page-break-inside: avoid !important;
+        }
         }
 
     </style>
   
-    <div class="container" >
+    <div class="container" id="section-to-print">
         <div class="row">
-            <div class="col-md-3">
-                <img src="profile-pic.jpeg" class="profile-pic">
+            <div class="col-md-3" id="left">
+                <img src="assets/Profile-pic.jpeg" class="profile-pic">
                 <div class="row contact">
                     <ul>
-                        <li><i class="fa fa-envelope fs-1"></i>umer.khan@gmail.com</li>
-                        <li><i class="fa fa-mobile fs-3"></i>+91 7889684429</li>
+                        <li><i class="fa fa-envelope fs-1"></i>umer.khan36@gmail.com</li>
+                        <li><i class="fa fa-mobile fs-3"></i>+91 7006455886</li>
                         <li><i class="fa fa-map-marker fs-2"></i>Hongasundra Bangalore</li>
-                        <li><i class="fa fa-linkedin-square fs-1"></i>umer.khan@gmail.com</li>
-                        <li><i class="fa fa-envelope fs-1"></i>umer.khan@gmail.com</li>
-                        <li><i class="fa fa-skype fs-2"></i>umer.khan@gmail.com</li>
+                        <li><i class="fa fa-linkedin-square fs-1"></i><a href="linkedIn-id">LinkedIn</a></li>
+                        <li><i class="fa fa-skype fs-2"></i><a href="skype-id">My-skype</a></li>
 
                     </ul>
                 </div>
                 <div class="row skills section-main">
                     <p class="title">Skills</p>
-                    <label>SEO</label>
-                    <label>Public Speaking</label>
-                    <label>Team Work</label>
-                    <label>Reading</label>
+                    <label>Troubleshooting network problems to maximize network performance</label>
+                <label>Administering firewalls and maintaining IT security systems</label>
+                    <label>Router configuration</label>
+                    <label>Upgrading data servers and network equipment</label>
+                    <label>IP address auditing</label>
+                    <label>Liaising with project managers and service desk engineers</label>
                 </div>
                 <div class="row languages section-main">
                     <p class="title">Languages</p>
@@ -294,61 +325,82 @@
                     
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-9" id="right">
                 <div class="row rt-head">
                     <h3 class="name">Umer Waseem Khan</h3>
-                    <p class="job-title">Business Development Manager</p>
+                    <!-- <p class="job-title">Business Development Manager</p> -->
                     <p>
-                        Professional business profile with more than four years of experience in the business developemnt process. Involved in product testing, managment and development of new business oppuntunites.
+                        Skilled IT Professional with broad base of experience in technical support
+                        and operations. Fast worker able to resolve problems quickly, delivering high
+                        levels of customer satisfaction. Excellent knowledge of Networking and
+                        softwares.
                     </p>
                 </div>
                 <div class="row main-body">
                     <div class="section-main">
-                        <p class="title">Work Experience</p>
-                        <div class="section-job-detail">
-                            <p class="sub-title">Business Development Manager</p>
-                            <p class="company">AirState Solutions</p>
-                            <div class="section">
-                                <span class="date">12/12/2018 - 12/12/2019</span> 
-                                <span class="date float-r">New York, USA</span> 
-                            </div>
-                            <div class="section-detial">
-                                <ul>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                </ul>
-                            </div>
-                        </div> <!-- section-job-detail -->
+                        <div class="page-break">
+                            <p class="title">Work Experience</p>
+                            <div class="section-job-detail">
+                                <p class="sub-title">Web Developer</p>
+                                <p class="company">LogicParadise Softwares</p>
+                                <div class="section">
+                                    <span class="date">04/05/2017 - 09/07/2019</span> 
+                                    <span class="date float-r">Srinagar, J&K</span> 
+                                </div>
+                                <div class="section-detial">
+                                    <ul>
+                                        <li><i class="fa fa-square fs-0"></i>Developing, Maintaining and Upgrading Softwares</li>
+                                        <li><i class="fa fa-square fs-0"></i>Analyze and Implement API's. Amazon Mws, Aws and Inventory related API's</li>
+                                        <li><i class="fa fa-square fs-0"></i>Worked as team member to develop and maintain existing systems</li>
+                                        <li><i class="fa fa-square fs-0"></i>Managing and Upgrading Front-end part of projects</li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="page-break">
+                            <div class="section-job-detail">
+                                <p class="sub-title">Trchnical Support Executive</p>
+                                <p class="company">FastMaximum Services</p>
+                                <div class="section">
+                                    <span class="date">12/04/2016 - 12/10/2017</span> 
+                                    <span class="date float-r">Srinagar, J&K</span> 
+                                </div>
+                                <div class="section-detial">
+                                    <ul>
+                                        <li><i class="fa fa-square fs-0"></i>Testing and evaluating new technology with new releases.</li>
+                                        <li><i class="fa fa-square fs-0"></i>To provide support to globally distributed customers for their various IT products like Norton</li>
+                                        <li><i class="fa fa-square fs-0"></i>Logging the queries of customers and employees.</li>
+                                        <li><i class="fa fa-square fs-0"></i>On daily basis report generations and reporting to team lead.</li>
+                                        <li><i class="fa fa-square fs-0"></i>To provide support to globally distributed customers for their various IT products like Norton</li>
+                                        <li><i class="fa fa-square fs-0"></i>Installing and Configuring Operating Systems like Windows, Mac OS and Ubuntu to PC's and
 
-
-                        <div class="section-job-detail">
-                            <p class="sub-title">Business Development Manager</p>
-                            <p class="company">AirState Solutions</p>
-                            <div class="section">
-                                <span class="date">12/12/2018 - 12/12/2019</span> 
-                                <span class="date float-r">New York, USA</span> 
+                                        Laptops.Fixing Emails , Upgrading security of systems by Installing and or Updating Anti-
+                                        viruses/Firewalls.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="section-detial">
-                                <ul>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                    <li><i class="fa fa-square fs-0"></i>Successfully managed $2 - 3 million budget projects ans successfully achieved the project scheduled goals.</li>
-                                </ul>
+                        </div>
+                        <div class="page-break">
+                            <p class="title">Education</p>
+                            <div class="section-orginization">
+                                <p>Masters Of Computer Applications(2015)</p>
+                                <p>Central University of jammu</p>
                             </div>
-                        </div> <!-- section-job-detail -->
+                        </div>
 
-                        <p class="title">Orginization</p>
-                        <div class="section-orginization">
-                            <p>Amarican Management Association(2015 - Present)</p>
-                            <p>Association of Private Enterprise  Association(2015 - Present)</p>
+                        <div class="page-break">
+                            <p class="title">Certification</p>
+                            <div class="section-orginization">
+                                <p>CCNA</p>
+                                <p>NetworkersHome Bangalore</p>
+                            </div>
+                        </div>
 
+                        <div class="page-break">
+                            <p class="title">Hobbies</p>
+                            <div class="section-orginization">
+                                <p>Angling, Trackking, Reading</p>
+                            </div>
                         </div>
                 </div>
             </div>
